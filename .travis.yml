@@ -8,7 +8,7 @@ before_install:
   - docker build -t jorgelopez21/docker-react -f Dockerfile.dev .
 
 script:
-<<<<<<< HEAD
+
   - docker run -e CI=true jorgelopez21/docker-react npm run test
 
 deploy:
@@ -22,6 +22,3 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
-=======
-  - docker run -e CI=true jorgelopez21/docker-react npm run test -- --coverage
->>>>>>> e517634cff9db946dcb710f3b3a8ff3bf27ad816

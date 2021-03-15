@@ -16,6 +16,7 @@ deploy:
   region: 'ap-southeast-2'
   app: 'docker4'
   env: 'Docker4-env'
+  version: 'Sample Application'
   bucket_name: 'elasticbeanstalk-ap-southeast-2-633784099568'
   bucket_path: 'docker'
   on:
